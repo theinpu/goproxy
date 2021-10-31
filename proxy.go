@@ -87,7 +87,7 @@ func removeProxyHeaders(ctx *ProxyCtx, r *http.Request) {
 	// https://jdebp.eu./FGA/web-proxy-connection-header.html
 	r.Header.Del("Proxy-Connection")
 	r.Header.Del("Proxy-Authenticate")
-	r.Header.Del("Proxy-Authorization")
+	//r.Header.Del("Proxy-Authorization")
 	// Connection, Authenticate and Authorization are single hop Header:
 	// http://www.w3.org/Protocols/rfc2616/rfc2616.txt
 	// 14.10 Connection
